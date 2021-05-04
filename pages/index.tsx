@@ -228,17 +228,17 @@ export default function Home() {
 
         {/* Mission and Vision */}
         <section>
-          <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
+          <div className="mt-4 relative px-4 sm:px-6 lg:px-8 bg-green py-8 border-t-2 text-gray-100">
             <div className="max-w-prose mx-auto">
-              <div className="mt-8">
+              <div className="pt-4">
                 <h2 className="text-lg">
-                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                  <span className="block text-base text-center text-white font-semibold tracking-wide uppercase">
                     Mission and Vision
                   </span>
                 </h2>
               </div>
 
-              <div className="text-gray-600 text-base leading-8 mt-4">
+              <div className="text-base leading-8 mt-4">
                 <p>
                   Our food system is broken and the food value chain has been
                   working in silos for the last 60 years. Restaurants want to do
@@ -292,13 +292,110 @@ export default function Home() {
         </section>
 
         {/* Values */}
-        <section></section>
+        <section className="mb-8">
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="max-w-prose mx-auto">
+              <div className="mt-8">
+                <h2 className="text-lg">
+                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Values
+                  </span>
+                </h2>
+              </div>
+              <div>
+                <p className="text-gray-600 text-base leading-8 mt-4">
+                  The ZFPA initiative will advance us towards fulfilling
+                  short-term, long-term, local and global sustainability goals.
+                </p>
+
+                <p className="text-gray-600 text-base leading-8 mt-4">
+                  Like our American counterpart, our parent organization, Zero
+                  Foodprint, we share the same values - those of regeneration,
+                  collective justice, and prosperity. We also take the{" "}
+                  <Link href="https://sdgs.un.org/goals">
+                    United Nation's Sustainable Development Goals
+                  </Link>{" "}
+                  into account. While ZFPA touches on all 17 UN Sustainable
+                  Development Goals, the following make up our core.
+                </p>
+              </div>
+
+              <div className="mt-4">
+                <div className="grid grid-cols-3 gap-x-2">
+                  <img
+                    src="./sdg-12.jpeg"
+                    alt="Responsible Consumption &#38; Production"
+                  />
+                  <img src="./sdg-13.jpeg" />
+                  <img src="./sdg-17.jpeg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* About the team */}
-        <section></section>
+        <section>
+          {/* <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
+            <div className="max-w-prose mx-auto">
+              <div className="mt-8">
+                <h2 className="text-lg">
+                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Team
+                  </span>
+                </h2>
+              </div>
+              <div className="mt-4">
+                <h3>Chef Peggy Chan | Executive Director</h3>
+                <p>
+                  Since the inception of Grassroots Pantry in 2012, Peggy
+                  established her restaurant as a training ground for young
+                  F&#38;B professionals ready and willing to challenge
+                  conventional foodservice operations. The award-winning
+                  plant-based restaurant was recognised by the UNSDG ESCAP in
+                  2019 as a best practice case study and achieved the HK Awards
+                  for Environmental Excellence in the Service Industry. An
+                  authority on food sustainability in Asia, Peggy developed
+                  Grassroots Initiatives Consultancy in 2020 to assist food
+                  service professionals in their transition towards best
+                  practices that meets both human and planetary health goals.
+                  Peggy is an alumni of Global Shapers Hong Kong, World Economic
+                  Forum, and was nominated for the Basque Culinary World Prize
+                  in 2019.
+                </p>
+              </div>
+              <div>
+                <h3>Joel Tomas | Director of Partnerships</h3>
+                <p>
+                  A hospitality industry veteran with over 25 years experience
+                  in front of house operations. Joel joined Grassroots in the
+                  spring of 2018 as Operations Manager. His role included
+                  expanding the company’s operational development to meet more
+                  rigid sustainability practices, and extending those same
+                  practices to other F&#38;B projects. He is currently
+                  completing a Bachelor in Health Science, majoring in Public
+                  Health &#38; Global Sustainability from Western Sydney
+                  University.
+                </p>
+              </div>
+            </div>
+          </div> */}
+        </section>
 
         {/* ZFPA Businesses */}
-        <section></section>
+        <section>
+          {/* <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
+            <div className="max-w-prose mx-auto">
+              <div className="mt-8">
+                <h2 className="text-lg">
+                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Businesses
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div> */}
+        </section>
       </main>
       <Footer />
     </div>
