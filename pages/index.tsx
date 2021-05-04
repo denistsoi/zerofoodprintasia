@@ -6,6 +6,25 @@ import { Config } from "Config"
 import { Header } from "@components/Header"
 import { Footer } from "@components/Footer"
 
+const people = [
+  {
+    name: "Chef Peggy Chan",
+    role: "Executive Director",
+    imageUrl: "./peggy.jpeg",
+    bio:
+      "Since the inception of Grassroots Pantry in 2012, Peggy established her restaurant as a training ground for young F&B professionals ready and willing to challenge conventional foodservice operations. The award-winning plant-based restaurant was recognised by the UNSDG ESCAP in 2019 as a best practice case study and achieved the HK Awards for Environmental Excellence in the Service Industry. An authority on food sustainability in Asia, Peggy developed Grassroots Initiatives Consultancy in 2020 to assist food service professionals in their transition towards best practices that meets both human and planetary health goals. Peggy is an alumni of Global Shapers Hong Kong, World Economic Forum, and was nominated for the Basque Culinary World Prize in 2019.",
+    linkedinUrl: "https://www.linkedin.com/in/peggy-chan-a15a1649/",
+  },
+  {
+    name: "Joel Tomas",
+    role: "Director of Partnerships",
+    imageUrl: "./joel.png",
+    bio:
+      "A hospitality industry veteran with over 25 years experience in front of house operations. Joel joined Grassroots in the spring of 2018 as Operations Manager. His role included expanding the company’s operational development to meet more rigid sustainability practices, and extending those same practices to other F&B projects. He is currently completing a Bachelor in Health Science, majoring in Public Health & Global Sustainability from Western Sydney University.",
+    linkedinUrl: "https://www.linkedin.com/in/joel-tomas-aaa90058/",
+  },
+]
+
 export default function Home() {
   return (
     <div>
@@ -340,65 +359,156 @@ export default function Home() {
 
         {/* About the team */}
         <section>
-          {/* <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
-            <div className="max-w-prose mx-auto">
-              <div className="mt-8">
-                <h2 className="text-lg">
-                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+          <div className="bg-white mt-8">
+            <div className="relative px-4 sm:px-6 lg:px-8">
+              <div className="max-w-prose mx-auto border-t-2 py-8">
+                <div className="mb-8">
+                  <h2 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
                     Team
-                  </span>
-                </h2>
-              </div>
-              <div className="mt-4">
-                <h3>Chef Peggy Chan | Executive Director</h3>
-                <p>
-                  Since the inception of Grassroots Pantry in 2012, Peggy
-                  established her restaurant as a training ground for young
-                  F&#38;B professionals ready and willing to challenge
-                  conventional foodservice operations. The award-winning
-                  plant-based restaurant was recognised by the UNSDG ESCAP in
-                  2019 as a best practice case study and achieved the HK Awards
-                  for Environmental Excellence in the Service Industry. An
-                  authority on food sustainability in Asia, Peggy developed
-                  Grassroots Initiatives Consultancy in 2020 to assist food
-                  service professionals in their transition towards best
-                  practices that meets both human and planetary health goals.
-                  Peggy is an alumni of Global Shapers Hong Kong, World Economic
-                  Forum, and was nominated for the Basque Culinary World Prize
-                  in 2019.
-                </p>
-              </div>
-              <div>
-                <h3>Joel Tomas | Director of Partnerships</h3>
-                <p>
-                  A hospitality industry veteran with over 25 years experience
-                  in front of house operations. Joel joined Grassroots in the
-                  spring of 2018 as Operations Manager. His role included
-                  expanding the company’s operational development to meet more
-                  rigid sustainability practices, and extending those same
-                  practices to other F&#38;B projects. He is currently
-                  completing a Bachelor in Health Science, majoring in Public
-                  Health &#38; Global Sustainability from Western Sydney
-                  University.
-                </p>
+                  </h2>
+                </div>
+                <div className="lg:col-span-2">
+                  <ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
+                    {people.map((person) => (
+                      <li key={person.name} className="sm:py-8">
+                        <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                          <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                            <img
+                              className="object-cover shadow-lg rounded-lg"
+                              src={person.imageUrl}
+                              alt=""
+                            />
+                          </div>
+                          <div className="sm:col-span-2">
+                            <div className="space-y-4">
+                              <div className="text-lg leading-6 font-medium space-y-1">
+                                <h3>{person.name}</h3>
+                                <p className="text-yellow-700">{person.role}</p>
+                              </div>
+                              <div className="text-md">
+                                <p className="text-gray-500">{person.bio}</p>
+                              </div>
+                              <ul className="flex space-x-5">
+                                <li>
+                                  <a
+                                    href={person.linkedinUrl}
+                                    target="_blank"
+                                    className="text-gray-400 hover:text-gray-500"
+                                  >
+                                    <span className="sr-only">LinkedIn</span>
+                                    <svg
+                                      className="w-5 h-5"
+                                      aria-hidden="true"
+                                      fill="currentColor"
+                                      viewBox="0 0 20 20"
+                                    >
+                                      <path
+                                        fillRule="evenodd"
+                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                        clipRule="evenodd"
+                                      />
+                                    </svg>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </section>
 
         {/* ZFPA Businesses */}
         <section>
-          {/* <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
-            <div className="max-w-prose mx-auto">
-              <div className="mt-8">
-                <h2 className="text-lg">
-                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
-                    Businesses
-                  </span>
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="max-w-prose mx-auto border-t-2 py-8 text-base">
+              <div className="mb-8">
+                <h2 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                  ZFPA Businesses
                 </h2>
               </div>
+
+              <div>
+                We come from the restaurant business. We live the struggle every
+                day. Knowing that we want to do more but don't have the time (or
+                often, budget) to get around every aspect of meeting best
+                practices is a dilemma. 1% pledge will help you get started on
+                this journey towards collective action where just a few dollars
+                per sale can add up to make renewable farming possible.
+              </div>
             </div>
-          </div> */}
+          </div>
+        </section>
+
+        <section>
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="max-w-prose mx-auto border-t-2 py-8 text-base">
+              <div className="mb-8">
+                <h2 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                  Why Join?
+                </h2>
+              </div>
+
+              <div>
+                The World Needs Restaurants! And restaurants need to be serving
+                better, more traceable and ethically sourced food. Besides
+                restoring our planet, becoming a ZFPA member happens to pose
+                additional benefits too.
+              </div>
+              <div>
+                <ul className="list-disc pl-4">
+                  <li>
+                    The 1% Pathway costs food and beverage establishments $0
+                  </li>
+                  <li>Differentiate your business as forward-thinking</li>
+                  <li>Attract mindful and conscious consumers and employees</li>
+                  <li>Create better food</li>
+                  <li>Change the world, effortlessly</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section>
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="max-w-prose mx-auto border-t-2 py-8 text-base">
+              <div className="mb-8">
+                <h2 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                  Membership Application
+                </h2>
+              </div>
+
+              <div className="text-base leading-8">
+                <p>
+                  1) ZFPA members add 1% to each customer’s bill (restaurant
+                  customers can opt out). ZFPA can provide explainer postcards
+                  or customized communications.
+                </p>
+                <p>
+                  2) Funds raised are sent to the Restore ZFPA Fund, which are
+                  then distributed as grants to local and regional farms and
+                  ranches.
+                </p>
+                <p>
+                  3) Technical assistance providers oversee the carbon farming
+                  projects.
+                </p>
+                <p>
+                  4) ZFPA, an in application Section 88 non-profit entity,
+                  organizes this effort and manages operations, communications
+                  and educational programs to support ZFPA's table-to-farm
+                  movement.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
