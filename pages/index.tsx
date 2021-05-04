@@ -21,7 +21,7 @@ export default function Home() {
       {/* header */}
       <Header />
 
-      <main className="py-4">
+      <main className="pb-8">
         {/* hero section */}
         <section>
           <div className="relative bg-gray-400">
@@ -59,10 +59,13 @@ export default function Home() {
                 </h2>
                 <div>
                   <p className="mt-6 text-base text-justify text-gray-600 leading-8">
-                    Zero Foodprint Asia, an extension of Zero Foodprint in
-                    California, is a nonprofit organization mobilizing the food
-                    world around agricultural climate solutions. ZFPA hosts a
-                    crowdfunding program that gathers funds from member food
+                    Zero Foodprint Asia, an extension of{" "}
+                    <Link href="https://www.zerofoodprint.org">
+                      Zero Foodprint
+                    </Link>{" "}
+                    in California, is a nonprofit organization mobilizing the
+                    food world around agricultural climate solutions. ZFPA hosts
+                    a crowdfunding program that gathers funds from member food
                     businesses such as restaurants, cafes, bars and food
                     retailers. Every member pledges 1% of their revenue to ZFPA
                     to fund regenerative farming practices that draw down carbon
@@ -157,21 +160,24 @@ export default function Home() {
 
           {/* Two Pathways */}
           <div className="mt-4 relative px-4 sm:px-6 lg:px-8">
-            <div className="max-w-prose mx-auto">
+            <div className="max-w-prose mx-auto leading-8">
               <h2 className="text-lg">
                 <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
                   Two Pathways
                 </span>
               </h2>
 
-              <div className="text-gray-600 text-base">
+              <div className="text-gray-600 text-base leading-8">
                 <h4 className="mt-2 text-md text-bold py-2 border-b-2 mb-2">
                   1% Pledge
                 </h4>
                 <ul className="list-disc pl-4">
                   <li>
-                    Restaurants / F&#38;B retailers (members) add a 1% surcharge
-                    on customer's bills or increase their selling prices.
+                    <p>
+                      Restaurants / F&#38;B retailers (members) add a 1%
+                      surcharge on customer's bills or increase their selling
+                      prices.
+                    </p>
                   </li>
                   <li>Members contribute the addtional 1% to ZFPA's funds.</li>
                   <li>
@@ -221,9 +227,71 @@ export default function Home() {
         </section>
 
         {/* Mission and Vision */}
-        <section></section>
+        <section>
+          <div className="mt-4 relative px-4 sm:px-6 lg:px-8 border-t-2">
+            <div className="max-w-prose mx-auto">
+              <div className="mt-8">
+                <h2 className="text-lg">
+                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Mission and Vision
+                  </span>
+                </h2>
+              </div>
 
-        {/* Value */}
+              <div className="text-gray-600 text-base leading-8 mt-4">
+                <p>
+                  Our food system is broken and the food value chain has been
+                  working in silos for the last 60 years. Restaurants want to do
+                  better but are oppressed by societal and economic pressures of
+                  staying afloat on nominal margins. The cycle of
+                  take-make-waste has resulted in a handful of companies
+                  controlling what we eat and how we eat.
+                </p>
+                <div className="mt-4">
+                  <h3 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Mission
+                  </h3>
+                  <ul className="list-disc pl-4">
+                    <li>
+                      To mobilise the restaurant industry around agricultural
+                      climate solutions.{" "}
+                    </li>
+                    <li>
+                      Help close the loop in our global food systems by
+                      magnifying and tackling local issues.
+                    </li>
+                  </ul>
+                  <p className="mt-4">
+                    Hong Kong has one of the highest densities of restaurants
+                    per capita in the world, with 10% of the total workforce
+                    working in the foodservice industry. The industry has a{" "}
+                    <em>HUGE</em> responsibility to address environmental impact
+                    of their operations - such as carbon emissions derived from
+                    the decisions these businesses make. ZFPA provides an
+                    opportunity for the hospitality industry to deliver
+                    tangible, measurable actions towards solving the most
+                    pressing crisis of our time - climate change.
+                  </p>
+                </div>
+                <div className="mt-4">
+                  <h3 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                    Vision
+                  </h3>
+                  <ul className="list-disc pl-4">
+                    <li>
+                      To use the power of grassroots movement in bringing food
+                      sovereignty back to the working class, especially those
+                      who grow and cook our food.
+                    </li>
+                    <li>To achieve a fair and equal food system for all.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
         <section></section>
 
         {/* About the team */}
