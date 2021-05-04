@@ -167,6 +167,10 @@ export default function Home() {
                 </span>
               </h2>
 
+              <div>
+                <img className="w-full" src="./pathway.png" />
+              </div>
+
               <div className="text-gray-600 text-base leading-8">
                 <h4 className="mt-2 text-md text-bold py-2 border-b-2 mb-2">
                   1% Pledge
