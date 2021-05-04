@@ -1,8 +1,20 @@
+import Head from "next/head"
+
+import { Config } from "Config"
+
 import styles from "../styles/application.module.css"
 
 export default function Application() {
   return (
     <html>
+      <Head>
+        <title>{Config.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body className={styles.html}>
         <iframe
           className={styles.iframe}

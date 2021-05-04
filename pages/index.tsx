@@ -485,7 +485,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="text-base leading-8">
+              <div className="text-base leading-8 py-2">
                 <p>
                   1) ZFPA members add 1% to each customer’s bill (restaurant
                   customers can opt out). ZFPA can provide explainer postcards
@@ -506,6 +506,17 @@ export default function Home() {
                   and educational programs to support ZFPA's table-to-farm
                   movement.
                 </p>
+              </div>
+
+              <div className="p-4 flex justify-center">
+                <a href="/membership" target="_blank">
+                  <button
+                    type="button"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
+                  >
+                    Join now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
