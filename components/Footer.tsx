@@ -1,15 +1,39 @@
+import Link from "next/link"
+import { Config } from "Config"
+const { navigation } = Config
+
 export const Footer = () => (
-  <footer className="relative bg-green px-4 sm:px-6 lg:px-8">
-    <>
-      <div className="max-w-prose mx-auto">
-        <div className="flex justify-between items-center py-2 md:space-x-10">
-          <div className="flex lg:w-0 lg:flex-1">
-            <span className="inline-flex items-center text-white text-sm">
-              Zero Footprint Asia ©2021
-            </span>
+  <footer className="bg-green">
+    <div className="max-w-7xl mx-auto py-6 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <nav
+        className="-mx-5 -my-2 flex flex-wrap justify-center"
+        aria-label="Footer"
+      >
+        {navigation.main.map((item) => (
+          <div key={item.name} className="px-5 py-2 ">
+            <Link href={item.href}>
+              <span className="underline cursor-pointer text-base text-white hover:text-gray-50">
+                {item.name}
+              </span>
+            </Link>
           </div>
-        </div>
+        ))}
+      </nav>
+      <div className="mt-8 flex justify-center space-x-6">
+        {navigation.social.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className="text-white hover:text-gray-50"
+          >
+            <span className="sr-only">{item.name}</span>
+            <item.icon className="h-6 w-6" aria-hidden="true" />
+          </a>
+        ))}
       </div>
-    </>
+      <p className="mt-8 text-center text-base text-white">
+        &copy; 2021, Zero Footprint Asia. All rights reserved.
+      </p>
+    </div>
   </footer>
 )
