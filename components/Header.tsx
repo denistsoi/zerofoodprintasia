@@ -37,7 +37,7 @@ export const Header = () => {
                 </Link>
               ))}
             </nav>
-            <div className="text-white block sm:hidden">
+            <div className="text-white block md:hidden">
               <button onClick={() => toggleMenu(!menuOpen)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
