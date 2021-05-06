@@ -1,4 +1,5 @@
 import { Layout } from "@components/Layout"
+import { Hero } from "@components/Hero"
 
 const people = [
   {
@@ -23,40 +24,13 @@ export default function Team() {
   return (
     <>
       <Layout>
-        <section>
-          <div className="relative bg-gray-400">
-            <div className="absolute inset-0">
-              <img
-                className="w-full h-full object-cover"
-                src="./hero.jpeg"
-                alt=""
-              />
-              <div
-                className="absolute inset-0 bg-gray-400"
-                style={{ mixBlendMode: "multiply" }}
-                aria-hidden="true"
-              />
-            </div>
-            <div className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
-              <div className="max-w-prose mx-auto">
-                <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl">
-                  Restoring our climate, our food, and our health.
-                </h1>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero slogan="About the Team" />
 
         {/* About the team */}
         <section>
           <div className="bg-white mt-8">
             <div className="relative px-4 sm:px-6 lg:px-8">
               <div className="max-w-prose mx-auto py-8">
-                <div className="mb-8">
-                  <h2 className="block text-base text-center text-green font-semibold tracking-wide uppercase">
-                    Team
-                  </h2>
-                </div>
                 <div className="lg:col-span-2">
                   <ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
                     {people.map((person) => (

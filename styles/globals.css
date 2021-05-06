@@ -18,8 +18,12 @@ a {
   color: var(--green);
 }
 
+h1 {
+  /* font-family: "ro" */
+}
+
 .hero {
-  height: 100vh;
+  height: calc(100vh - 112px);
 }
 
 main {

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Layout>
-        <Hero image="./hero/patio.jpeg" slogan="ZFPA Businesses" />
+        <Hero filename="/hero/patio.jpeg" slogan="ZFPA Businesses" />
         <section>
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="max-w-prose mx-auto border-t-2 py-8 text-base">

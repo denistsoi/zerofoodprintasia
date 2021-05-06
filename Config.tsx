@@ -2,10 +2,11 @@ export const Config = {
   title: "Zero Foodprint Asia",
   navigation: {
     main: [
-      { name: "About", href: "/about" },
-      { name: "ZFPA Business", href: "/zfpa-businesses" },
-      { name: "Team", href: "/team" },
+      // { name: "About", href: "/about" },
       { name: "Why", href: "/why" },
+      { name: "How", href: "/how" },
+      { name: "Team", href: "/team" },
+      { name: "Join", href: "/zfpa-businesses" },
     ],
     social: [
       {
@@ -23,7 +24,7 @@ export const Config = {
       },
       {
         name: "GitHub",
-        href: "#",
+        href: "https://github.com/zerofoodprintasia/",
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
