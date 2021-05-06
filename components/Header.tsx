@@ -27,8 +27,8 @@ export const Header = () => {
               </div>
             </Link>
           </div>
-          <div className="flex md:flex items-center justify-end md:flex-1 lg:w-0">
-            <nav className="hidden sm:flex flex-wrap ">
+          <div className="flex items-center justify-end md:flex-1 lg:w-0">
+            <nav className="hidden md:flex flex-wrap ">
               {navigation.main.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <span className="cursor-pointer whitespace-nowrap text-xs  font-medium text-white hover:text-gray-300 no-underline uppercase justify-right text-right py-2 px-4">
@@ -37,7 +37,7 @@ export const Header = () => {
                 </Link>
               ))}
             </nav>
-            <div className="text-white block md:hidden">
+            <div className="text-white md:hidden">
               <button onClick={() => toggleMenu(!menuOpen)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
