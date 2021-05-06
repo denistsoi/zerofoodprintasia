@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Kollektif";
+  src: url("/fonts/Kollektif/Kollektif.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --green: #1f3a3a;
 }
@@ -24,8 +31,10 @@ p {
   @apply pt-4;
 }
 
-h1 {
-  font-family: "Open Sans", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Kollektif", sans-serif;
   font-weight: normal;
 }
 

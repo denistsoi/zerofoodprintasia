@@ -40,11 +40,11 @@ export default function Why() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-3 pb-8 gap-0 md:gap-2 p-4">
+            <div className="grid grid-cols-3 pb-8 gap-0 md:gap-2">
               <div className="col-span-3 md:col-span-1">
                 <h3 className="py-2 text-base">1% Pledge</h3>
               </div>
-              <div className="col-span-3 md:col-span-2 px-2">
+              <div className="col-span-3 md:col-span-2 px-4">
                 <ul className="list-disc pl-4">
                   <li className="text-base leading-2 py-2">
                     Restaurants / F&B retailers (members) add a 1% surcharge on
@@ -65,13 +65,13 @@ export default function Why() {
                 </ul>
               </div>
             </div>
-            <div className="grid grid-cols-3 pb-8 gap-0 md:gap-2 p-4">
+            <div className="grid grid-cols-3 pb-8 gap-0 md:gap-2">
               <div className="col-span-3 md:col-span-1">
                 <h3 className="py-2 text-base">
                   Carbon Neutrality Program / Lifecycle Assessment (Q2 2022)
                 </h3>
               </div>
-              <div className="col-span-3 md:col-span-2 px-2">
+              <div className="col-span-3 md:col-span-2 px-4">
                 <ul className="list-disc pl-4">
                   <li className="text-base leading-2 py-2">
                     Members will examine the environmental impact of their
