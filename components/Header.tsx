@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import { Config } from "Config"
 const { navigation } = Config
@@ -9,11 +10,15 @@ export const Header = () => (
       <div className="flex justify-between py-2 md:space-x-10">
         <div className="flex lg:w-0 lg:flex-1">
           <Link href="/">
-            <div className="inline-flex items-center cursor-pointer">
-              <img
+            <div className="inline-flex h-20 sm:h-24 w-20 sm:w-24 items-center cursor-pointer border border-inner border-gray-50 rounded-full">
+              <Image
                 className="h-20 w-auto sm:h-24"
-                src="./logo.png"
+                width={120}
+                height={120}
+                quality={50}
+                src="/logo.png"
                 alt="zfpa"
+                layout="intrinsic"
               />
             </div>
           </Link>
