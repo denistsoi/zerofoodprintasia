@@ -17,6 +17,7 @@ a {
   text-decoration: underline;
   color: var(--green);
 }
+
 p {
   @apply text-gray-700;
   @apply leading-6;
@@ -24,7 +25,8 @@ p {
 }
 
 h1 {
-  /* font-family: "ro" */
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
 }
 
 .hero {
@@ -36,4 +38,8 @@ main {
 }
 section {
   scroll-snap-align: start;
+}
+
+.smallcaps {
+  font-variant: small-caps;
 }

@@ -24,19 +24,18 @@ export const Hero = ({
   const [showScroll, toggleScrollIcon] = useState(true)
 
   const toggleViewScroll = () => {
-    const showScrollIcon = window.scrollY < 40 ? true : false
+    const showScrollIcon = window?.scrollY < 40 ? true : false
     toggleScrollIcon(showScrollIcon)
   }
-  const watchScroll = () => {
-    window.addEventListener("scroll", toggleViewScroll)
-  }
-  useEffect(() => {
-    watchScroll()
 
-    return () => {
-      window.removeEventListener("scroll", toggleViewScroll)
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", toggleViewScroll)
+      return () => {
+        window.removeEventListener("scroll", toggleViewScroll)
+      }
     }
-  }, [window.scrollY])
+  })
 
   return (
     <section>
@@ -45,8 +44,9 @@ export const Hero = ({
           <Image
             className="w-full h-full object-cover"
             src={filename}
-            alt=""
+            alt={filename}
             layout="fill"
+            quality={30}
             priority
           />
           <div
@@ -57,7 +57,7 @@ export const Hero = ({
         </div>
         <div className="relative pt-24 pb-8 sm:pt-32 sm:pb-16 px-4 sm:px-6 lg:px-8 hero grid">
           <div className="max-w-prose mx-auto flex items-center">
-            <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl md:pl-8">
+            <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl md:pl-8 uppercase smallcaps">
               {slogan}
             </h1>
           </div>
@@ -76,9 +76,9 @@ export const Hero = ({
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M19 9l-7 7-7-7"
                 />
               </svg>

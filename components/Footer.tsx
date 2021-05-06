@@ -11,11 +11,6 @@ export const Footer = () => (
       >
         {navigation.main.map((item) => (
           <div key={item.name} className="px-5 py-2">
-            {/* <Link href={item.href}>
-              <span className="underline cursor-pointer text-base text-white hover:text-gray-50">
-                {item.name}
-              </span>
-            </Link> */}
             <Link key={item.name} href={item.href}>
               <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-white hover:text-gray-300 no-underline uppercase justify-center-center flex items-center py-2 px-4">
                 {item.name}
