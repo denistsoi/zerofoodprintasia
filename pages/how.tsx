@@ -4,7 +4,7 @@ import { Hero } from "@components/Hero"
 export default function Why() {
   return (
     <Layout>
-      <Hero slogan="How do we do this?" filename="/hero/meal" />
+      <Hero slogan="How do we do this?" filename="meal" />
       <section>
         <div className="relative px-4 sm:px-6 lg:px-8 py-8">
           <div className="max-w-prose mx-auto">

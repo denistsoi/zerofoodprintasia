@@ -9,13 +9,13 @@ enum Extension {
 interface HeroProps {
   slogan?: string
   filename?: string
-  extension?: Extension
+  extension?: Extension | string
 }
 
 export const Hero = ({
   slogan = "Restoring our climate, our food, and our health.",
-  filename = "/hero/index",
-  extension = Extension.webp,
+  filename = "index",
+  extension = Extension.webp as string,
 }: HeroProps) => {
   const clickHandler = () => {
     const currentLocation = window.scrollY
@@ -50,7 +50,7 @@ export const Hero = ({
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
-            src={`${filename}.${extension}`}
+            src={`/hero/${filename}.${extension}`}
             alt={filename}
             layout="fill"
             quality={30}

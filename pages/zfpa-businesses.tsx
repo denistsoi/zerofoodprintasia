@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <Layout>
-        <Hero filename="/hero/hands" slogan="ZFPA Businesses" />
+        <Hero filename="hands" slogan="ZFPA Businesses" />
         <section>
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="max-w-prose mx-auto text-base py-4 md:py-8">
