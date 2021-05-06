@@ -17,6 +17,11 @@ a {
   text-decoration: underline;
   color: var(--green);
 }
+p {
+  @apply text-gray-700;
+  @apply leading-6;
+  @apply pt-4;
+}
 
 h1 {
   /* font-family: "ro" */

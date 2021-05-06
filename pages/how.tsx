@@ -4,12 +4,12 @@ import { Hero } from "@components/Hero"
 export default function Why() {
   return (
     <Layout>
-      <Hero slogan="How do we do this?" />
+      <Hero slogan="How do we do this?" filename="/hero/meal.jpeg" />
       <section>
         <div className="relative px-4 sm:px-6 lg:px-8 py-8">
           <div className="max-w-prose mx-auto">
             <div className="text-base leading-8">
-              <p className="pt-4">
+              <p className="py-4 leading-8 text-base">
                 Here’s the deal. Industrial agriculture is subsidized;
                 regenerative agriculture is not. To even things out, ZFPA
                 members collect a few dollars per meal which adds up to make
@@ -96,8 +96,8 @@ export default function Why() {
         </div>
       </section>
 
-      <section className="pb-16">
-        <div className="relative px-4 sm:px-6 lg:px-8 py-8">
+      <section>
+        <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="max-w-prose mx-auto">
             <p className="text-base leading-8">
               Both pathways contribute to large-scale reform by creating acres
@@ -107,6 +107,31 @@ export default function Why() {
               environmental impact and create sustainable change for future
               operations.
             </p>
+          </div>
+        </div>
+      </section>
+      {/* Values */}
+      <section className="pb-16 pt-8">
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="max-w-prose mx-auto">
+            <div>
+              <h3 className="text-xl">Values</h3>
+              <p className="text-base leading-8">
+                While ZFPA touches on all 17 UN Sustainable Development Goals,
+                the following make up our core.
+              </p>
+            </div>
+
+            <div className="mt-4">
+              <div className="grid grid-cols-3 gap-x-2">
+                <img
+                  src="./sdg-12.jpeg"
+                  alt="Responsible Consumption &#38; Production"
+                />
+                <img src="./sdg-13.jpeg" alt="Climate Action" />
+                <img src="./sdg-17.jpeg" alt="Partnership for the Goals" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

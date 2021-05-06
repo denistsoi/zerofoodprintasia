@@ -1,3 +1,5 @@
+import Head from "next/head"
+
 import Link from "next/link"
 import { Layout } from "@components/Layout"
 import { Hero } from "@components/Hero"
@@ -6,11 +8,11 @@ export default function About() {
   return (
     <>
       <Layout>
-        <Hero filename="/hero/patio.jpeg" slogan="ZFPA Businesses" />
+        <Hero filename="/hero/hands.jpeg" slogan="ZFPA Businesses" />
         <section>
           <div className="relative px-4 sm:px-6 lg:px-8">
-            <div className="max-w-prose mx-auto border-t-2 py-8 text-base">
-              <div className="py-4">
+            <div className="max-w-prose mx-auto text-base py-4 md:py-8">
+              <div>
                 <p>
                   We come from the restaurant business. We live the struggle
                   every day. Knowing that we want to do more but don't have the
@@ -22,10 +24,10 @@ export default function About() {
                 </p>
               </div>
 
-              <div>
+              <div className="py-8">
                 <h2 className="text-xl py-4">Why Join?</h2>
-                <div className="py-4">
-                  <p className="pt-2">
+                <div>
+                  <p className="pt-4">
                     <strong>The World Needs Restaurants!</strong>{" "}
                     <em>
                       (And restaurants need to be serving better, more traceable
@@ -47,8 +49,18 @@ export default function About() {
                   <li>Change the world, effortlessly</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <h2>Enquire now!</h2>
+        <section>
+          <div className="relative px-4 sm:px-6 lg:px-8 border-t-2">
+            <div className="max-w-prose mx-auto text-base py-4 md:py-8">
+              <div className="grid grid-cols-3">
+                <div className="col-span-1">
+                  <h2 className="text-xl py-4">Enquire now</h2>
+                </div>
+              </div>
             </div>
           </div>
         </section>

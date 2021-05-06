@@ -10,7 +10,7 @@ export default function Home() {
 
         {/* why */}
         <section>
-          <div className="relative py-8 bg-white overflow-hidden">
+          <div className="relative py-16 bg-gray-50 overflow-hidden">
             <div className="relative px-4 sm:px-6 lg:px-8">
               <div className="max-w-prose mx-auto">
                 <h2 className="text-lg">
@@ -19,7 +19,7 @@ export default function Home() {
                   </span>
                 </h2>
                 <div>
-                  <p className="mt-6 text-base text-justify text-gray-600 leading-8">
+                  <p className="pt-4 text-base text-justify">
                     Zero Foodprint Asia, an extension of{" "}
                     <a href="https://www.zerofoodprint.org" target="_blank">
                       Zero Foodprint
@@ -33,7 +33,7 @@ export default function Home() {
                     from the atmosphere and help combat global warming; this is
                     the ZFP model.
                   </p>
-                  <p className="mt-6 text-base text-justify text-gray-600 leading-8">
+                  <p className="pt-4 text-base text-justify">
                     Our aim is to engage the hospitality sector in climate
                     solutions and create a culture where it is normal for food
                     businesses and customers to directly bring about

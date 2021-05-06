@@ -4,7 +4,7 @@ import { Config } from "Config"
 const { navigation } = Config
 
 export const Header = () => (
-  <header className="relative bg-green hidden md:block">
+  <header className="relative bg-green md:block shadow-inner shadow">
     <div className="max-w-8xl mx-auto px-4 sm:px-6">
       <div className="flex justify-between py-2 md:space-x-10">
         <div className="flex lg:w-0 lg:flex-1">
@@ -18,7 +18,7 @@ export const Header = () => (
             </div>
           </Link>
         </div>
-        <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <div className="flex md:flex items-center justify-end md:flex-1 lg:w-0">
           <nav className="flex flex-wrap">
             {navigation.main.map((item) => (
               <Link key={item.name} href={item.href}>
@@ -27,11 +27,6 @@ export const Header = () => (
                 </span>
               </Link>
             ))}
-            {/* <Link href="#">
-              <span className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-2 text-base font-medium text-white no-underline uppercase">
-                Donate
-              </span>
-            </Link> */}
           </nav>
         </div>
       </div>

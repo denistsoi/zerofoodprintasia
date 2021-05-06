@@ -19,7 +19,7 @@ export const Footer = () => (
           </div>
         ))}
       </nav>
-      <div className="mt-8 flex justify-center space-x-6">
+      <div className="py-4 flex justify-center space-x-6">
         {navigation.social.map((item) => (
           <a
             key={item.name}
@@ -31,7 +31,7 @@ export const Footer = () => (
           </a>
         ))}
       </div>
-      <p className="mt-8 text-center text-base text-white">
+      <p className="text-center text-xs text-white">
         &copy; 2021, Zero Footprint Asia. All rights reserved.
       </p>
     </div>
