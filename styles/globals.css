@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Kollektif";
+  src: url("/fonts/Kollektif/Kollektif.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --green: #1f3a3a;
 }
@@ -16,4 +23,32 @@
 a {
   text-decoration: underline;
   color: var(--green);
+}
+
+p {
+  @apply text-gray-700;
+  @apply leading-6;
+  @apply pt-4;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kollektif", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  height: calc(100vh - 112px);
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+}
+
+.smallcaps {
+  font-variant: small-caps;
 }
