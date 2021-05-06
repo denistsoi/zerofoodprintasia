@@ -15,7 +15,7 @@ interface HeroProps {
 export const Hero = ({
   slogan = "Restoring our climate, our food, and our health.",
   filename = "index",
-  extension = Extension.webp as string,
+  extension = Extension.jpeg as string,
 }: HeroProps) => {
   const clickHandler = () => {
     const currentLocation = window.scrollY
