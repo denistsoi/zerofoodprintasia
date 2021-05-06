@@ -22,7 +22,7 @@ export const Header = () => (
           <nav className="flex flex-wrap">
             {navigation.main.map((item) => (
               <Link key={item.name} href={item.href}>
-                <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-white hover:text-gray-100 no-underline uppercase justify-center-center flex items-center py-2 px-4">
+                <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-white hover:text-gray-300 no-underline uppercase justify-center-center flex items-center py-2 px-4">
                   {item.name}
                 </span>
               </Link>

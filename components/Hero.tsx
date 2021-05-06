@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 interface HeroProps {
   slogan?: string
@@ -19,6 +20,24 @@ export const Hero = ({
       behavior: "smooth",
     })
   }
+
+  const [showScroll, toggleScrollIcon] = useState(true)
+
+  const toggleViewScroll = () => {
+    const showScrollIcon = window.scrollY < 40 ? true : false
+    toggleScrollIcon(showScrollIcon)
+  }
+  const watchScroll = () => {
+    window.addEventListener("scroll", toggleViewScroll)
+  }
+  useEffect(() => {
+    watchScroll()
+
+    return () => {
+      window.removeEventListener("scroll", toggleViewScroll)
+    }
+  }, [window.scrollY])
+
   return (
     <section>
       <div className="relative bg-gray-400 ">
@@ -44,10 +63,25 @@ export const Hero = ({
           </div>
           <div className="max-w-prose mx-auto items-end justify-center text-white w-full inline-flex text-center">
             <div
-              className="h-40 items-center flex cursor-pointer"
+              className={`h-10 items-center cursor-pointer animate-bounce ${
+                showScroll ? "opacity-100" : "opacity-0"
+              }`}
               onClick={clickHandler}
             >
-              ___________
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </div>
           </div>
         </div>
