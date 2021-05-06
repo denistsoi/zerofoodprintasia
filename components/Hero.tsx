@@ -68,9 +68,9 @@ export const Hero = ({
               {slogan}
             </h1>
           </div>
-          <div className="max-w-prose mx-auto items-end justify-center text-white w-full inline-flex text-center">
+          <div className="max-w-prose mx-auto items-end justify-center text-white w-full inline-flex text-center h-20 self-end mb-20">
             <div
-              className={`h-10 items-center cursor-pointer animate-bounce ${
+              className={`flex h-10 w-20 justify-center items-center cursor-pointer animate-bounce ${
                 showScroll ? "opacity-100" : "opacity-0"
               }`}
               onClick={clickHandler}
