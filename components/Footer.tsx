@@ -10,7 +10,7 @@ export const Footer = () => (
         aria-label="Footer"
       >
         {navigation.main.map((item) => (
-          <div key={item.name} className="px-5 py-2">
+          <div key={item.name} className="px-2 md:py-5 py-2">
             <Link key={item.name} href={item.href}>
               <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-white hover:text-gray-300 no-underline uppercase justify-center-center flex items-center py-2 px-4">
                 {item.name}
@@ -19,7 +19,7 @@ export const Footer = () => (
           </div>
         ))}
       </nav>
-      <div className="py-4 flex justify-center space-x-6">
+      <div className="py-4 flex justify-center space-x-2 md:space-x-6">
         {navigation.social.map((item) => (
           <a
             key={item.name}
