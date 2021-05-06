@@ -1,14 +1,21 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
+enum Extension {
+  jpeg = "jpeg",
+  png = "png",
+  webp = "webp",
+}
 interface HeroProps {
   slogan?: string
   filename?: string
+  extension?: Extension
 }
 
 export const Hero = ({
   slogan = "Restoring our climate, our food, and our health.",
-  filename = "/hero/index.jpeg",
+  filename = "/hero/index",
+  extension = Extension.webp,
 }: HeroProps) => {
   const clickHandler = () => {
     const currentLocation = window.scrollY
@@ -43,7 +50,7 @@ export const Hero = ({
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
-            src={filename}
+            src={`${filename}.${extension}`}
             alt={filename}
             layout="fill"
             quality={30}

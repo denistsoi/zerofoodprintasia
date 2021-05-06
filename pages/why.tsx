@@ -4,7 +4,7 @@ import { Hero } from "@components/Hero"
 export default function Why() {
   return (
     <Layout>
-      <Hero slogan="Why Asia?" filename="/hero/mini-bus-hong-kong.jpeg" />
+      <Hero slogan="Why Asia?" filename="/hero/mini-bus-hong-kong" />
 
       <section>
         <div className="relative py-8 md:py-16 bg-gray-50 overflow-hidden">
