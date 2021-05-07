@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Layout } from "@components/Layout"
 import { Hero } from "@components/Hero"
 
@@ -5,7 +6,7 @@ const people = [
   {
     name: "Chef Peggy Chan",
     role: "Executive Director",
-    imageUrl: "./profile/peggy.jpeg",
+    imageUrl: "/profile/peggy.jpeg",
     bio:
       "Since the inception of Grassroots Pantry in 2012, Peggy established her restaurant as a training ground for young F&B professionals ready and willing to challenge conventional foodservice operations. The award-winning plant-based restaurant was recognised by the UNSDG ESCAP in 2019 as a best practice case study and achieved the HK Awards for Environmental Excellence in the Service Industry. An authority on food sustainability in Asia, Peggy developed Grassroots Initiatives Consultancy in 2020 to assist food service professionals in their transition towards best practices that meets both human and planetary health goals. Peggy is an alumni of Global Shapers Hong Kong, World Economic Forum, and was nominated for the Basque Culinary World Prize in 2019.",
     linkedinUrl: "https://www.linkedin.com/in/peggy-chan-a15a1649/",
@@ -13,7 +14,7 @@ const people = [
   {
     name: "Joel Tomas",
     role: "Director of Partnerships",
-    imageUrl: "./profile/joel.png",
+    imageUrl: "/profile/joel.jpeg",
     bio:
       "A hospitality industry veteran with over 25 years experience in front of house operations. Joel joined Grassroots in the spring of 2018 as Operations Manager. His role included expanding the company’s operational development to meet more rigid sustainability practices, and extending those same practices to other F&B projects. He is currently completing a Bachelor in Health Science, majoring in Public Health & Global Sustainability from Western Sydney University.",
     linkedinUrl: "https://www.linkedin.com/in/joel-tomas-aaa90058/",
@@ -38,8 +39,10 @@ export default function Team() {
                         <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                           <div className="aspect-w-1 aspect-h-1">
                             <div className="shadow-lg rounded-lg p-4 overflow-hidden flex md:p-0 sm:block">
-                              <img
-                                className="object-cover"
+                              <Image
+                                layout="responsive"
+                                height={100}
+                                width={100}
                                 src={person.imageUrl}
                                 alt=""
                               />

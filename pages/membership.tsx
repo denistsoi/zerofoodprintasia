@@ -8,8 +8,8 @@ import styles from "../styles/application.module.css"
 export default function Application() {
   return (
     <>
-      <Layout>
-        <div className="flex">
+      <Layout headerType="relative">
+        <div className="flex h-screen relative">
           <iframe
             className={styles.iframe}
             id="typeform-full"

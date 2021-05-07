@@ -5,11 +5,15 @@ import Image from "next/image"
 import { Config } from "Config"
 const { navigation } = Config
 
-export const Header = () => {
+export const Header = ({ headerType }) => {
   const [menuOpen, toggleMenu] = useState(false)
 
   return (
-    <header className="absolute top-0 inset-x-0 bg-green md:bg-transparent md:block shadow-inner shadow z-10">
+    <header
+      className={`${
+        headerType ?? "absolute md:bg-transparent"
+      } top-0 inset-x-0 bg-green md:block shadow-inner shadow z-10`}
+    >
       <div className="max-w-8xl mx-auto px-4 sm:px-6 border-b border-gray-900 md:border-transparent">
         <div className="flex justify-between py-2 md:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
