@@ -11,8 +11,8 @@ export const Header = ({ headerType }) => {
   return (
     <header
       className={`${
-        headerType ?? "absolute md:bg-transparent"
-      } top-0 inset-x-0 bg-green md:block shadow-inner shadow z-10`}
+        headerType ?? "absolute bg-green md:bg-transparent"
+      } top-0 inset-x-0 md:block z-10`}
     >
       <div className="max-w-8xl mx-auto px-4 sm:px-6 border-b border-gray-900 md:border-transparent">
         <div className="flex justify-between py-2 md:space-x-10">
