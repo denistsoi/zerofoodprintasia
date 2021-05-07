@@ -9,18 +9,18 @@ export const Header = () => {
   const [menuOpen, toggleMenu] = useState(false)
 
   return (
-    <header className="absolute top-0 inset-x-0 bg-green md:block shadow-inner shadow z-10">
+    <header className="absolute top-0 inset-x-0 bg-green md:bg-transparent md:block shadow-inner shadow z-10">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 border-b border-gray-900">
         <div className="flex justify-between py-2 md:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
-              <div className="inline-flex h-20 sm:h-24 w-20 sm:w-24 items-center cursor-pointer border border-inner border-gray-50 rounded-full">
+              <div className="inline-flex h-24 sm:h-28 w-24 sm:w-28 items-center cursor-pointer">
                 <Image
-                  className="h-20 w-auto sm:h-24"
+                  className="h-24 w-auto sm:h-28"
                   width={120}
                   height={120}
                   quality={50}
-                  src="/logo.png"
+                  src="/logo-white.png"
                   alt="zfpa"
                   layout="intrinsic"
                 />
@@ -66,7 +66,7 @@ export const Header = () => {
             <Link key={item.name} href={item.href}>
               <div className="bg-green items-end text-right flex flex-1 w-full">
                 <span
-                  className={`cursor-pointer whitespace-nowrap text-xs font-medium text-white hover:text-gray-300 no-underline uppercase w-full text-right py-2 px-6 ${
+                  className={`cursor-pointer whitespace-nowrap text-xs font-medium text-white hover:text-gray-300 no-underline uppercase w-full text-right py-2 h-8 px-6 ${
                     index % 2 === 0 ? "" : "bg-opacity-20 bg-black"
                   }`}
                 >
