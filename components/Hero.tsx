@@ -46,7 +46,7 @@ export const Hero = ({
 
   return (
     <section>
-      <div className="relative bg-gray-400 ">
+      <div className="relative bg-gray-400">
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
@@ -62,8 +62,8 @@ export const Hero = ({
             aria-hidden="true"
           />
         </div>
-        <div className="relative pt-24 pb-8 sm:pt-32 sm:pb-16 px-4 sm:px-6 lg:px-8 hero grid">
-          <div className="max-w-prose mx-auto flex items-center">
+        <div className="relative pt-24 pb-8 sm:pt-32 sm:pb-16 px-4 sm:px-6 lg:px-8 hero grid grid-rows-3">
+          <div className="max-w-prose mx-auto flex items-center row-span-3">
             <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl md:pl-8 uppercase smallcaps">
               {slogan}
             </h1>

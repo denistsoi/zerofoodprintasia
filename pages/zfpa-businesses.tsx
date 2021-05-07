@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Layout } from "@components/Layout"
 import { Hero } from "@components/Hero"
 
@@ -55,12 +56,16 @@ export default function About() {
             <div className="max-w-prose mx-auto text-base py-4 md:py-8">
               <div className="grid grid-cols-3">
                 <div className="col-span-1">
-                  <h2 className="text-xl py-4">Enquire now</h2>
+                  <Link href="/membership">
+                    <h2 className="text-xl py-4">Enquire now</h2>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section></section>
       </Layout>
     </>
   )
