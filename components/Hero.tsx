@@ -64,7 +64,7 @@ export const Hero = ({
         </div>
         <div className="relative pt-24 pb-8 sm:pt-32 sm:pb-16 px-4 sm:px-6 lg:px-8 hero grid grid-rows-3">
           <div className="max-w-prose mx-auto flex items-center row-span-3">
-            <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl md:pl-8 uppercase smallcaps">
+            <h1 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-4xl md:pl-8 uppercase smallcaps pt-10">
               {slogan}
             </h1>
           </div>

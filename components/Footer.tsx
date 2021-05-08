@@ -19,7 +19,7 @@ export const Footer = () => (
           </div>
         ))}
       </nav>
-      <div className="py-4 flex justify-center space-x-2 md:space-x-6">
+      <div className="py-2 sm:py-4 flex justify-center space-x-2 md:space-x-6">
         {navigation.social.map((item) => (
           <a
             key={item.name}

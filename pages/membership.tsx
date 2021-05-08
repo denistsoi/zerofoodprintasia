@@ -8,7 +8,7 @@ import styles from "../styles/application.module.css"
 export default function Application() {
   return (
     <>
-      <Layout headerType="relative">
+      <Layout headerType="relativeHeader">
         <div className="flex h-screen relative">
           <iframe
             className={styles.iframe}
