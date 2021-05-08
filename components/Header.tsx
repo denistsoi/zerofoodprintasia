@@ -63,7 +63,11 @@ export const Header = ({ headerType }) => {
       <div
         className={`${menuOpen ? "opacity-100" : "hidden"} md:hidden relative`}
       >
-        <nav className="block bg-green w-full absolute h-full top-0 inset-x-0">
+        <nav
+          className={`block bg-green w-full ${
+            headerType ? "relative" : "absolute"
+          } h-full top-0 inset-x-0`}
+        >
           {navigation.main.map((item, index) => (
             <Link key={item.name} href={item.href}>
               <div className="bg-green items-end text-right flex flex-1 w-full">
