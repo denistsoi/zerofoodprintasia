@@ -47,8 +47,8 @@ export default function Why() {
               <div className="col-span-3 md:col-span-2 px-4">
                 <ul className="list-disc pl-4">
                   <li className="text-base leading-2 py-2">
-                    Restaurants / F&B retailers (members) add a 1% surcharge on
-                    customer's bills or increase their selling prices.{" "}
+                    Restaurants / F&amp;B retailers (members) add a 1% surcharge
+                    on customer's bills or increase their selling prices.{" "}
                   </li>
                   <li className="text-base leading-2 py-2">
                     Members contribute the addtional 1% to ZFPA's funds.{" "}
@@ -105,7 +105,10 @@ export default function Why() {
               The Carbon Neutrality/LCA Program additionally equips food
               businesses with the tools to become increasingly aware of their
               environmental impact and create sustainable change for future
-              operations.
+              operations. For more info behind the science, visit:{" "}
+              <a href="https://www.zerofoodprint.org/dig-into-zfp">
+                zerofoodprint.org
+              </a>
             </p>
           </div>
         </div>
@@ -126,7 +129,7 @@ export default function Why() {
               <div className="grid grid-cols-3 gap-x-2">
                 <img
                   src="./sdg-12.jpeg"
-                  alt="Responsible Consumption &#38; Production"
+                  alt="Responsible Consumption &amp; Production"
                 />
                 <img src="./sdg-13.jpeg" alt="Climate Action" />
                 <img src="./sdg-17.jpeg" alt="Partnership for the Goals" />
