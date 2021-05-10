@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Layout } from "@components/Layout"
+import { Form } from "@components/Form"
 import { Hero } from "@components/Hero"
+import { Layout } from "@components/Layout"
 
 export default function About() {
   return (
@@ -56,16 +56,14 @@ export default function About() {
             <div className="max-w-prose mx-auto text-base py-4 md:py-8">
               <div className="grid grid-cols-3">
                 <div className="col-span-1">
-                  <Link href="/membership">
-                    <h2 className="text-xl py-4">Enquire now</h2>
-                  </Link>
+                  <h2 className="text-md md:text-xl pt-4">Enquire now</h2>
                 </div>
               </div>
+
+              <Form />
             </div>
           </div>
         </section>
-
-        <section></section>
       </Layout>
     </>
   )

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -7,11 +7,11 @@ const { navigation } = Config
 
 import styles from "../styles/header.module.css"
 
-export const Header = ({ headerType }) => {
+export const Header = () => {
   const [menuOpen, toggleMenu] = useState(false)
 
   return (
-    <header className={`${styles[headerType] || `${styles.header}`}`}>
+    <header className={styles.header}>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 border-b border-gray-900 md:border-transparent">
         <div className="flex justify-between py-2 md:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
@@ -63,11 +63,7 @@ export const Header = ({ headerType }) => {
       <div
         className={`${menuOpen ? "opacity-100" : "hidden"} md:hidden relative`}
       >
-        <nav
-          className={`block bg-green w-full ${
-            headerType ? "relative" : "absolute"
-          } h-full top-0 inset-x-0`}
-        >
+        <nav className={`block bg-green w-full h-full top-0 inset-x-0`}>
           {navigation.main.map((item, index) => (
             <Link key={item.name} href={item.href}>
               <div className="bg-green items-end text-right flex flex-1 w-full">
