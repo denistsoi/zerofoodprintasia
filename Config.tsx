@@ -1,13 +1,14 @@
 export const Config = {
   title: "Zero Foodprint Asia",
   navigation: {
-    main: [
-      // { name: "About", href: "/about" },
-      { name: "Why", href: "/why" },
-      { name: "How", href: "/how" },
-      { name: "Team", href: "/team" },
-      { name: "Join", href: "/join" },
-    ],
+    // main: [
+    //   // { name: "About", href: "/about" },
+    //   { name: "Why", href: "/why" },
+    //   { name: "How", href: "/how" },
+    //   { name: "Team", href: "/team" },
+    //   { name: "Join", href: "/join" },
+    // ],
+    main: [],
     social: [
       {
         name: "Instagram",

@@ -31,7 +31,7 @@ export const Header = ({ headerType }) => {
           </div>
           <div className="flex items-center justify-end md:flex-1 lg:w-0">
             <nav className="hidden md:flex flex-wrap ">
-              {navigation.main.map((item) => (
+              {navigation?.main?.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <span className="cursor-pointer whitespace-nowrap text-xs  font-medium text-white hover:text-gray-300 no-underline uppercase justify-right text-right py-2 px-4">
                     {item.name}

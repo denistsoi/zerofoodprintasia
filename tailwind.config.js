@@ -1,7 +1,6 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: "jit",
   purge: ['./pages/*.tsx', './components/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -21,6 +20,8 @@ module.exports = {
         "light-green": "var(--light-green)",
         black: "var(--black)",
         white: "var(--white)",
+        pink: "#BB917B",
+        "dark-pink": "#80533C",
       },
     },
 
