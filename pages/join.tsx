@@ -43,7 +43,7 @@ export default function About() {
                 <div className="py-8">
                   <h2 className="text-xl py-4">Why Join?</h2>
 
-                  <div className="sm:max-w-sm">
+                  <div className="sm:max-w-sm pb-4">
                     <p className="pt-4">
                       <strong>The World Needs Restaurants!</strong>{" "}
                       <em>
@@ -70,7 +70,7 @@ export default function About() {
                   </div>
 
                   <Link href="/membership">
-                    <h2 className="text-xl p-4 rounded cursor-pointer">
+                    <h2 className="text-xl p-4 rounded cursor-pointer bg-dark-amber inline-block">
                       Enquire now
                     </h2>
                   </Link>

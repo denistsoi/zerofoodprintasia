@@ -10,7 +10,7 @@ export default function Home() {
 
         {/* why */}
         <section>
-          <div className="relative py-16 bg-white overflow-hidden">
+          <div className="relative py-16 bg-white text-dark overflow-hidden">
             <div className="relative px-4 sm:px-6 lg:px-8">
               <div className="max-w-prose mx-auto">
                 <h2 className="text-lg">

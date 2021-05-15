@@ -7,7 +7,7 @@ export default function Why() {
       <Hero slogan="How do we do this?" filename="meal" />
 
       <section>
-        <div className="relative px-4 sm:px-6 lg:px-8 py-8 bg-amber text-black">
+        <div className="relative px-4 sm:px-6 lg:px-8 py-8 bg-dark-amber text-white">
           <div className="max-w-prose mx-auto">
             <div className="max-w-prose text-base leading-8">
               <p className="py-4 text-base">
