@@ -10,11 +10,11 @@ export default function Home() {
 
         {/* why */}
         <section>
-          <div className="relative py-16 bg-gray-50 overflow-hidden">
+          <div className="relative py-16 bg-white overflow-hidden">
             <div className="relative px-4 sm:px-6 lg:px-8">
               <div className="max-w-prose mx-auto">
                 <h2 className="text-lg">
-                  <span className="block text-base text-center text-green font-semibold tracking-wide uppercase">
+                  <span className="block text-base text-center font-semibold tracking-wide uppercase">
                     What is Zero Foodprint Asia (ZFPA)?
                   </span>
                 </h2>

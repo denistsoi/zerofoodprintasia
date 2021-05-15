@@ -7,16 +7,14 @@ const people = [
     name: "Chef Peggy Chan",
     role: "Executive Director",
     imageUrl: "/profile/peggy.jpeg",
-    bio:
-      "Since the inception of Grassroots Pantry in 2012, Peggy established her restaurant as a training ground for young F&B professionals ready and willing to challenge conventional foodservice operations. The award-winning plant-based restaurant was recognised by the UNSDG ESCAP in 2019 as a best practice case study and achieved the HK Awards for Environmental Excellence in the Service Industry. An authority on food sustainability in Asia, Peggy developed Grassroots Initiatives Consultancy in 2020 to assist food service professionals in their transition towards best practices that meets both human and planetary health goals. Peggy is an alumni of Global Shapers Hong Kong, World Economic Forum, and was nominated for the Basque Culinary World Prize in 2019.",
+    bio: "Since the inception of Grassroots Pantry in 2012, Peggy established her restaurant as a training ground for young F&B professionals ready and willing to challenge conventional foodservice operations. The award-winning plant-based restaurant was recognised by the UNSDG ESCAP in 2019 as a best practice case study and achieved the HK Awards for Environmental Excellence in the Service Industry. An authority on food sustainability in Asia, Peggy developed Grassroots Initiatives Consultancy in 2020 to assist food service professionals in their transition towards best practices that meets both human and planetary health goals. Peggy is an alumni of Global Shapers Hong Kong, World Economic Forum, and was nominated for the Basque Culinary World Prize in 2019.",
     linkedinUrl: "https://www.linkedin.com/in/peggy-chan-a15a1649/",
   },
   {
     name: "Joel Tomas",
     role: "Director of Partnerships",
     imageUrl: "/profile/joel.jpeg",
-    bio:
-      "A hospitality industry veteran with over 25 years experience in front of house operations. Joel joined Grassroots in the spring of 2018 as Operations Manager. His role included expanding the company’s operational development to meet more rigid sustainability practices, and extending those same practices to other F&B projects. He is currently completing a Bachelor in Health Science, majoring in Public Health & Global Sustainability from Western Sydney University.",
+    bio: "A hospitality industry veteran with over 25 years experience in front of house operations. Joel joined Grassroots in the spring of 2018 as Operations Manager. His role included expanding the company’s operational development to meet more rigid sustainability practices, and extending those same practices to other F&B projects. He is currently completing a Bachelor in Health Science, majoring in Public Health & Global Sustainability from Western Sydney University.",
     linkedinUrl: "https://www.linkedin.com/in/joel-tomas-aaa90058/",
   },
 ]
@@ -29,7 +27,7 @@ export default function Team() {
 
         {/* About the team */}
         <section>
-          <div className="bg-white mt-8">
+          <div className="bg-white pt-12">
             <div className="relative px-4 sm:px-6 lg:px-8">
               <div className="max-w-prose mx-auto py-8">
                 <div className="lg:col-span-2">

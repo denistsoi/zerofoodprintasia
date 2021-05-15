@@ -4,7 +4,7 @@ import { Acknowledgement } from "./Acknowledgement"
 const { navigation } = Config
 
 export const Footer = () => (
-  <footer className="bg-green">
+  <footer className="bg-dark-green">
     <div className="max-w-7xl mx-auto pt-6 pb-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav
         className="-mx-5 -my-2 flex flex-wrap justify-center"

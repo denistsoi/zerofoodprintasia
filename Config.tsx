@@ -6,7 +6,7 @@ export const Config = {
       { name: "Why", href: "/why" },
       { name: "How", href: "/how" },
       { name: "Team", href: "/team" },
-      { name: "Join", href: "/zfpa-businesses" },
+      { name: "Join", href: "/join" },
     ],
     social: [
       {

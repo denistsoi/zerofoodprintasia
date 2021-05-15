@@ -4,8 +4,8 @@ const { acknowledgements } = Config
 
 export const Acknowledgement = () => (
   <div className="max-w-lg mx-auto">
-    <p className="text-xs text-white text-center">
-      Credits &amp; Acknowledgement:{" "}
+    <div className="text-xs text-white text-center">
+      <p>Credits &amp; Acknowledgement: </p>
       <div>
         {acknowledgements.map((category, categoryIndex) => (
           <span key={`${category.role}-${categoryIndex}`}>
@@ -27,6 +27,6 @@ export const Acknowledgement = () => (
           </span>
         ))}
       </div>
-    </p>
+    </div>
   </div>
 )
