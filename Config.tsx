@@ -6,7 +6,7 @@ export const Config = {
       { name: "Why", href: "/why" },
       { name: "How", href: "/how" },
       { name: "Team", href: "/team" },
-      { name: "Join", href: "/zfpa-businesses" },
+      { name: "Join", href: "/join" },
     ],
     social: [
       {
@@ -37,4 +37,59 @@ export const Config = {
       },
     ],
   },
+  acknowledgements: [
+    {
+      role: "Tech",
+      people: [
+        {
+          name: "Denis Tsoi",
+          href: "https://www.linkedin.com/in/denistsoi/",
+        },
+      ],
+    },
+    {
+      role: "Graphic Design",
+      people: [
+        {
+          name: "Eva Ma",
+          href: "https://www.linkedin.com/in/eva-ma-2a137b71",
+        },
+        {
+          name: "Shannon Yeung",
+          href: "https://www.shannonyeung.com/",
+        },
+      ],
+    },
+    {
+      role: "Translations",
+      people: [
+        {
+          name: "Maggie Tan",
+          href: "https://www.linkedin.com/in/maggietanyc",
+        },
+      ],
+    },
+    {
+      role: "Video Production",
+      people: [
+        {
+          name: "Capsule48",
+          href: "https://www.capsule48.com/",
+        },
+      ],
+    },
+    {
+      role: "Photography",
+      people: [
+        {
+          name: "Amanda Kho",
+          href: "https://www.amandakho.com/",
+        },
+        {
+          name: "Ken Wu",
+          href: "http://lightseedstudio.com/",
+        },
+      ],
+    },
+  ],
 }

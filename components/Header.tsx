@@ -64,13 +64,13 @@ export const Header = ({ headerType }) => {
         className={`${menuOpen ? "opacity-100" : "hidden"} md:hidden relative`}
       >
         <nav
-          className={`block bg-green w-full ${
+          className={`block bg-dark-green w-full ${
             headerType ? "relative" : "absolute"
           } h-full top-0 inset-x-0`}
         >
           {navigation.main.map((item, index) => (
             <Link key={item.name} href={item.href}>
-              <div className="bg-green items-end text-right flex flex-1 w-full">
+              <div className="bg-dark-green items-end text-right flex flex-1 w-full">
                 <span
                   className={`cursor-pointer whitespace-nowrap text-xs font-medium text-white hover:text-gray-300 no-underline uppercase w-full text-right py-2 h-8 px-6 ${
                     index % 2 === 0 ? "" : "bg-opacity-20 bg-black"

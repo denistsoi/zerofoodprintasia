@@ -1,9 +1,10 @@
 import Link from "next/link"
 import { Config } from "Config"
+import { Acknowledgement } from "./Acknowledgement"
 const { navigation } = Config
 
 export const Footer = () => (
-  <footer className="bg-green">
+  <footer className="bg-dark-green">
     <div className="max-w-7xl mx-auto pt-6 pb-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav
         className="-mx-5 -my-2 flex flex-wrap justify-center"
@@ -31,43 +32,7 @@ export const Footer = () => (
           </a>
         ))}
       </div>
-      <div className="max-w-xl mx-auto">
-        <p className="text-xs text-white text-center">
-          Credits &amp; Acknowledgement:{" "}
-          <a className="text-white" target="_blank" href="">
-            Denis Tsoi
-          </a>{" "}
-          (Tech),{" "}
-          <a className="text-white" target="_blank" href="">
-            Eva Ma
-          </a>{" "}
-          (Graphic Design),{" "}
-          <a
-            className="text-white"
-            target="_blank"
-            href="https://www.shannonyeung.com/"
-          >
-            Shannon Yeung
-          </a>{" "}
-          (Graphic Design),{" "}
-          <a className="text-white" target="_blank" href="">
-            Maggie Tan
-          </a>{" "}
-          (Translations),{" "}
-          <a
-            className="text-white"
-            target="_blank"
-            href="https://www.capsule48.com/"
-          >
-            Capsule48,
-          </a>{" "}
-          (Video Production){" "}
-          <a className="text-white" target="_blank" href="">
-            Amanda Kho, Ken Wu
-          </a>{" "}
-          (Photography).{" "}
-        </p>
-      </div>
+      <Acknowledgement />
       <p className="text-center text-xs text-white">
         Copyright &copy; 2021, Zero Footprint Asia.
       </p>

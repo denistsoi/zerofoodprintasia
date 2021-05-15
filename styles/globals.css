@@ -10,23 +10,22 @@
 }
 
 :root {
-  --green: #1f3a3a;
-}
-.bg-green {
-  background-color: var(--green);
-}
+  --dark-green: #1f3a3a;
+  --green: #427064;
+  --light-green: #698583;
+  --black: #1d2b31;
+  --white: #f6f4f0;
 
-.text-green {
-  color: var(--green);
+  --dark-amber: #c78c43;
+  --amber: #e0a44f;
 }
 
 a {
   text-decoration: underline;
-  color: var(--green);
+  color: var(--dark-green);
 }
 
 p {
-  @apply text-gray-700;
   @apply leading-6;
   @apply pt-4;
 }
@@ -51,4 +50,8 @@ section {
 
 .smallcaps {
   font-variant: small-caps;
+}
+
+.section {
+  max-height: 400px;
 }
