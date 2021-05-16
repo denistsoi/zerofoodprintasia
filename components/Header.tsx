@@ -39,7 +39,7 @@ export const Header = ({ headerType }) => {
                 </Link>
               ))}
             </nav>
-            <div className="text-white md:hidden">
+            {/* <div className="text-white md:hidden">
               <button onClick={() => toggleMenu(!menuOpen)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,11 +56,11 @@ export const Header = ({ headerType }) => {
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className={`${menuOpen ? "opacity-100" : "hidden"} md:hidden relative`}
       >
         <nav
@@ -82,7 +82,7 @@ export const Header = ({ headerType }) => {
             </Link>
           ))}
         </nav>
-      </div>
+      </div> */}
     </header>
   )
 }

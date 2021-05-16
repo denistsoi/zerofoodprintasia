@@ -5,7 +5,7 @@ export const Join = () => (
   <>
     <section>
       <div className="relative bg-black">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 aspect-w-4 aspect-h-3 lg:aspect-w-2 lg:aspect-h-1">
           <Image
             className="w-full object-cover"
             src={`/hero/zfpa-businesses.jpeg`}
