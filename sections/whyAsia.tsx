@@ -1,8 +1,9 @@
 import Image from "next/image"
+
 export const WhyAsia = () => (
   <section>
-    <div className="relative py-8 md:py-16 overflow-hidden">
-      <div className="absolute inset-0 aspect-w-5 aspect-h-1">
+    <div className="relative py-8 md:py-16 overflow-hidden bg-pink md:bg-none">
+      <div className="hidden md:block absolute inset-0 aspect-w-5 aspect-h-1">
         <Image
           className="hidden md:block w-full object-contain lg:object-cover"
           src={`/hero/charsiu.jpg`}
@@ -10,16 +11,11 @@ export const WhyAsia = () => (
           quality={90}
           priority
         />
-        <div
-          className="absolute inset-0 bg-dark-pink "
-          style={{ mixBlendMode: "multiply" }}
-          aria-hidden="true"
-        />
       </div>
 
-      <div className="relative px-4 sm:px-6 lg:px-8 text-white xl:max-w-6xl xl:mx-auto">
-        <div className="grid md:grid-cols-3 lg:grid-cols-5">
-          <div className="text-base col-span-1 p-4 md:bg-gray-700 md:bg-opacity-70">
+      <div className="relative px-4 sm:px-6 lg:px-8  text-white xl:max-w-6xl xl:mx-auto">
+        <div className="grid md:grid-cols-4">
+          <div className="text-base col-span-1 py-4 md:p-4 md:bg-dark-pink md:bg-opacity-70">
             <p className="text-sm pt-0">
               Asia’s population is expected to hit 5 billion by 2035, with the
               continent currently comprising around 60% of the world’s
@@ -34,8 +30,19 @@ export const WhyAsia = () => (
               hawker markets that play a pivotal role in Asian cities.
             </p>
           </div>
-          <div className="md:col-auto lg:col-span-3 py-28 md:py-0"></div>
-          <div className="text-base col-span-1 p-4 md:bg-gray-700 md:bg-opacity-70">
+          <div className="md:col-auto md:py-0">
+            <div className="-mx-4 md:hidden">
+              <Image
+                src={`/hero/charsiu.jpg`}
+                layout="responsive"
+                height={512}
+                width={1024}
+                quality={90}
+                priority
+              />
+            </div>
+          </div>
+          <div className="text-base md:col-start-4 col-span-1 py-4 md:p-4 md:bg-dark-pink md:bg-opacity-70">
             <p className="text-sm pt-0">
               While China has recently set out its net zero emission target for
               2060 and Hong Kong by 2050, the potential for the ZFP model to

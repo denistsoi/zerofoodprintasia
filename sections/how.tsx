@@ -91,7 +91,7 @@ export const How = () => (
     <section>
       <div className="relative py-4 px-4 sm:px-6 lg:px-8 bg-dark-amber text-white">
         <div className="max-w-prose mx-auto">
-          <p className="text-base leading-8 pb-4">
+          <p className="text-sm leading-2 pb-4">
             Both pathways contribute to large-scale reform by creating acres of
             healthy soil and removing tonnes of carbon from the atmosphere. The
             Carbon Neutrality/LCA Program additionally equips food businesses
@@ -99,7 +99,7 @@ export const How = () => (
             impact and create sustainable change for future operations. For more
             info behind the science, visit:{" "}
             <a
-              className="text-lg text-white font-bold"
+              className="text-sm text-white font-bold"
               href="https://www.zerofoodprint.org/dig-into-zfp"
             >
               zerofoodprint.org

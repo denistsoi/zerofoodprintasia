@@ -4,7 +4,7 @@ export const Values = () => (
       <div className="max-w-prose mx-auto">
         <div>
           <h3 className="text-4xl font-bold py-4">Values</h3>
-          <p className="text-base leading-8 py-4">
+          <p className="text-sm py-4">
             While ZFPA touches on all 17 UN Sustainable Development Goals, the
             following make up our core.
           </p>

@@ -4,8 +4,8 @@ import Image from "next/image"
 export const Join = () => (
   <>
     <section>
-      <div className="relative bg-black">
-        <div className="absolute inset-0 aspect-w-4 aspect-h-3 lg:aspect-w-2 lg:aspect-h-1">
+      <div className="relative bg-black overflow-hidden">
+        <div className="absolute inset-0 aspect-w-3 aspect-h-2">
           <Image
             className="w-full object-cover"
             src={`/hero/zfpa-businesses.jpeg`}
@@ -22,7 +22,7 @@ export const Join = () => (
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="max-w-prose mx-auto text-base py-4 md:py-8 text-white">
             <div>
-              <p>
+              <p className="text-sm">
                 We come from the restaurant business. We live the struggle every
                 day. Knowing that we want to do more but don't have the time (or
                 often, budget) to get around every aspect of meeting best
@@ -59,11 +59,13 @@ export const Join = () => (
                 </ul>
               </div>
 
-              <Link href="/membership">
-                <h2 className="text-xl p-4 rounded cursor-pointer bg-dark-amber inline-block">
-                  Enquire now
-                </h2>
-              </Link>
+              <div className="pt-8">
+                <Link href="/membership">
+                  <h2 className="text-xl p-4 rounded cursor-pointer bg-dark-amber inline-block">
+                    Enquire now
+                  </h2>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@ export const Join = () => (
               <h1 className="relative text-xl font-extrabold tracking-tight sm:text-2xl lg:text-4xl uppercase smallcaps bg-dark inline-block text-white p-4">
                 Restaurant Partners
               </h1>
-              <h4 className="relative inline-block bg-dark text-white p-4">
+              <h4 className="relative inline-block bg-dark text-white text-sm p-4">
                 Here are the 20 pilot ZFPA partners launching the 1% pledge with
                 us on June 1st, 2021.
               </h4>
